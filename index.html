@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SportsHub — Eventi sportivi</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <h1>SportsHub</h1>
+    <p>Cerca una squadra, scopri prossime partite e ultimi risultati.</p>
+
+    <form id="form-ricerca">
+      <input type="text" id="ricerca-squadra" placeholder="Es. Real Madrid, Juventus...">
+      <button type="submit">Cerca</button>
+    </form>
+  </header>
+
+  <main class="container">
+    <div class=" container max-auto larg ">
+
+      <section id="preferiti-section" class="mt-4">
+        <h2 class="fs-3">⭐ Le tue squadre preferite</h2>
+        <div id="lista-preferiti" class="row g-3 justify-content-center">
+          <p>Nessuna squadra tra i preferiti</p>
+        </div>
+      </section>
+
+      <section id="risultati-section" class="mt-4 mb-4">
+        <h2 class="fs-3">Squadre trovate</h2>
+        <div id="lista-risultati" class="row g-3 justify-content-center"></div>
+      </section>
+
+      <section id="dettagli-section" class="mt-4" hidden>
+        <div class="card shadow-sm p-3 p-md-4">
+          <h2 id="nome-squadra" class="blu fw-bold mb-4"></h2>
+          <div class="row g-4">
+
+  
+            <div class="col-12 col-lg-6 col-md-6">
+              <h3 class="fs-5 fw-semibold border-bottom coloreBordo border-2 pb-2 mb-3">
+                Prossimi eventi
+              </h3>
+
+              <div id="prossimi-eventi" class="border-bottom border-1"></div>
+            </div>
+
+
+            <div class="col-12 col-lg-6 col-md-6">
+              <h3 class="fs-5 fw-semibold border-bottom coloreBordo border-2 pb-2 mb-3">
+                Ultimi risultati
+              </h3>
+              <div id="ultimi-risultati" class="border-bottom border-1"></div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </div>
+  </main>
+
+
+
+
+
+
+
+  <script src="assets/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
